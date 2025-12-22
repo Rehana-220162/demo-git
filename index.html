@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <title>RS CAFE</title>
     <style>
@@ -13,7 +12,17 @@
             background-color: darkgoldenrod;
             color:black;
             padding:20px;
+            display: flex;
+            align-items: center;
             text-align:center;
+            gap: 20px;
+       }
+       .header-text{
+        text-align: left;
+       }
+       .header-img img{
+        width: 80px;
+        height: auto;
        }
        nav{
         background-color:darkkhaki;
@@ -46,6 +55,13 @@
         box-shadow: 0 0 10px rgba(0,0,0,0,1);
         border-radius: 8px;
     }
+    .media{
+        text-align: center;
+        margin-top: 10px;
+    }
+    audio,video{
+        border-radius: 8px;
+    }
     footer{
         color:black;
         text-align: center;
@@ -56,8 +72,22 @@
 </head>
 <body>
     <header>
+        <div class="header-img">
+            <img src="C:\Users\Rehana Shaik\html_practice\download.png" alt="Coffee image">
+        </div>
+        <div class="header-text">
         <h1>RS CAFE</h1>
         <p>Friendly Service with better Quality and Hygiene</p>
+        </div>
+        <div class="media">
+            <audio controls>
+                <source src="mixkit-little-birds-singing-in-the-trees-17.wav" type="audio/mpeg">
+            </audio>
+            <br><br>
+            <video width="220" controls>
+                <source src="236256_small.mp4" type="video/mp4">
+            </video>
+        </div>
     </header>
     <nav>
         <a href="#">HOME</a>
