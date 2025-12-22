@@ -68,7 +68,21 @@
         padding: 10px;
         margin-top: 20px;
     }
+    .menu-table{
+        width: 60%;
+        margin: 30px auto;
+        border-collapse: collapse;
+    }
+    .menu-table th, .menu-table td{
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+    }
+    .menu-table th{
+        background-color: darkkhaki;
+    }
 </style>
+<link rel="stylesheet" href="C:\Users\Rehana Shaik\html_practice\External_table.css">
 </head>
 <body>
     <header>
@@ -114,6 +128,95 @@
         </p>
         </div>
     </section>
+    <h4 style="text-align: center;">Cafe Menu(Inline CSS)</h4>
+    <table style="width: 60%; margin:auto; border-collapse:collapse;">
+        <tr>
+            <th style="border: 1px solid black; padding: 10px; background-color: burlywood;">Coffee</th>
+            <th style="border: 1px solid black; padding: 10px; background-color: burlywood;">Price</th>
+        </tr>
+        <tr>
+            <td style="border:1px solid black; padding: 8px;">Americano</td>
+             <td style="border:1px solid black; padding: 8px;">120/-</td>
+        </tr>
+        <tr>
+            <td style="border:1px solid black; padding: 8px;">Cappuccino</td>
+             <td style="border:1px solid black; padding: 8px;">150/-</td>
+        </tr>
+    </table>
+    <h5 style="text-align: center;">Cafe Timings(internal CSS)</h5>
+    <table class="menu-table">
+        <tr>
+            <th>Day</th>
+            <th>Opening Time</th>
+            <th>Closing Time</th>
+        </tr>
+        <tr>
+            <td>Monday-Friday</td>
+            <td>9:00 AM</td>
+            <td>10:00 PM</td>
+        </tr>
+        <tr>
+            <td>Saturday-Sunday</td>
+            <td>10:00 AM</td>
+            <td>11:00 PM</td>
+        </tr>
+    </table>
+    <h6 style="text-align: center;">Customer Orders(External CSS)</h6>
+    <table class="order-table">
+        <tr>
+            <th>Order ID</th>
+            <th>Coffee</th>
+            <th>Quantity</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Latte</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Mocha</td>
+            <td>1</td>
+        </tr>
+    </table>
+    <h7 style="text-align: center;">Cafe Reservation Form</h7>
+    <form style="width:60%; margin:auto; background:#ffff; padding:20px; border-radius:10px;">
+        <label>Customer Name:</label><br>
+        <input type="text" placeholder="Enter your name" required><br><br>
+        <label>Email:</label><br>
+        <input type="email" placeholder="Enter email"><br><br>
+        <label>Password:</label><br>
+        <input type="password" placeholder="Enter password"><br><br>
+        <label>Number of people:</label><br>
+        <input type="number" min="1" max="10"><br><br>
+        <label>Phone Number:</label><br>
+        <input type="tel" placeholder="Enter phone number"><br><br>
+        <label>Reservation Date:</label><br>
+        <input type="date"><br><br>
+        <label>Reservaton Time:</label><br>
+        <input type="time"><br><br>
+        <label>Dining Type:</label><br>
+        <input type="radio" name="dine">Dine In
+        <input type="radio" name="dine">Take Away
+        <br><br>
+        <label>Preferred Payment:</label><br>
+        <select>
+            <option>Cash</option>
+            <option>UPI</option>
+            <option>Card</option>
+        </select><br><br>
+        <label>Feedback:</label><br>
+        <textarea rows="4" cols="40" placeholder="Write your feedback..."></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    <h8 style="text-align:center;">Visit Our Website</h8>
+    <iframe src="https://www.wikipedia.org"
+            width="80%"
+            height="250"
+            style="border:1px solid black; display:block; margin:auto;">
+    </iframe>
 <footer>
     &copy:SINCE 2006|RS CAFE
 </footer>
