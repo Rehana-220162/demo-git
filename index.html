@@ -83,8 +83,22 @@
     }
 </style>
 <link rel="stylesheet" href="C:\Users\Rehana Shaik\html_practice\External_table.css">
+<script>
+    function welcomeMessage(){
+        alert("Welcome to RS CAFE Enjoy your time");
+    }
+    const showCafeTimings=function(){
+        alert("cafe Timings:\nMon-Fri:9AM-10PM\nSat-Sun:10AM-11PM");
+    };
+    const confirmReservation=()=>{
+        alert("Your Reservation has been submitted successfully");
+    };
+    (function(){
+        console.log("RS CAFE website loaded successfully");
+    })();
+</script>
 </head>
-<body>
+<body onload="welcomeMessage()">
     <header>
         <div class="header-img">
             <img src="C:\Users\Rehana Shaik\html_practice\download.png" alt="Coffee image">
@@ -105,7 +119,7 @@
     </header>
     <nav>
         <a href="#">HOME</a>
-        <a href="#">MENU</a>
+        <a href="#" onclick="showCafeTimings()">MENU</a>
         <a href="#">ABOUT</a>
         <a href="#">CONTACT</a>
     </nav>
@@ -208,7 +222,7 @@
         <label>Feedback:</label><br>
         <textarea rows="4" cols="40" placeholder="Write your feedback..."></textarea>
         <br><br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" onclick="confirmReservation()">
         <input type="reset" value="Reset">
     </form>
     <h8 style="text-align:center;">Visit Our Website</h8>
