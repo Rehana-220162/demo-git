@@ -14,9 +14,17 @@
 include "db.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $u = $_POST['username'];
-    $e = $_POST['email'];
-    $p = $_POST['password'];
+    $u =trim($_POST['username']);
+    $e =trim($_POST['email']);
+    $p =trim($_POST['password']);
+    $u=ucwords(strtolower($u));
+
+    if (strlen($u)<3){
+        die("Username too short");
+    }
+    if (strlen($p)<5){
+        die("Password must be at least 5 characters");
+    }
 
     $query = "INSERT INTO users (username, email, password)
               VALUES ('$u', '$e', '$p')";

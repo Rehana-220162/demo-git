@@ -21,6 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (mysqli_num_rows($result) == 1) {
         echo "Login successful";
+        print "<br>Welcome user";
     } else {
         echo "Invalid login details";
     }

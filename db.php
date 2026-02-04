@@ -1,7 +1,6 @@
 <?php
-$conn=mysqli_connect("localhost","root",
-"","userdb");
+$conn=mysqli_connect("localhost","root","","userdb");
 if(!$conn){
-    die("Database connection failed");
+    die("Connection failed");
 }
 ?>
