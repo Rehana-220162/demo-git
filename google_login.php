@@ -1,6 +1,9 @@
 <?php
 require 'vendor/autoload.php';
 
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
 $client = new Google_Client();
 $client->setClientId(getenv('GOOGLE_CLIENT_ID'));
 $client->setClientSecret(getenv('GOOGLE_CLIENT_SECRET'));
